@@ -1,0 +1,54 @@
+GET http://localhost:7012/project
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjU0Njg4NTMsImV4cCI6MTYyNTQ2OTc1M30.bN8sZqPw4ROjNAzbR3ubYlVcRLL8xbALg_mrohHYKGE
+
+
+###
+POST http://localhost:7012/login
+Content-Type: application/json
+
+{
+    "username": "Kathleen"
+}
+
+
+###
+GET http://localhost:7012/project/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjU0NzEzMDcsImV4cCI6MTYyNTQ3MjIwN30.ZUgMfwtfC04iUzVl2FXBhfI3ryI4Vy235h_caBspJMo
+
+
+###
+GET http://localhost:7012/project/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjU0NzEzMDcsImV4cCI6MTYyNTQ3MjIwN30.ZUgMfwtfC04iUzVl2FXBhfI3ryI4Vy235h_caBspJMo
+
+
+###
+POST http://localhost:7012/project/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjU0NzM2NzksImV4cCI6MTYyNTQ3NDU3OX0.HVYylV4XVDybbiYLgf5dDgx3adiYfSmKMYMwiOd58C8
+Content-Type: application/json
+
+{
+    "title": "TEST CLEAN ARCH 9669",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus ornare posuere. Pellentesque ut luctus nulla. Vivamus imperdiet a purus cursus dapibus. Curabitur ut magna arcu. Proin vel fringilla sem, vitae elementum ante. Proin vestibulum arcu in lectus dapibus porta. Sed gravida vulputate porta. Ut iaculis sapien non turpis eleifend sodales congue ut tortor.",
+    "budget": "$9000",
+    "email": "newuser6@email.com"
+}
+
+
+###
+DELETE http://localhost:7012/project/111
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ4NjU1OTcsImV4cCI6MTYyNDg2Njc5N30.CM2_s8iOLgQu9R0yW4wqkZtgDU2zL-PhEn4-UIu8laU
+
+
+###
+PATCH http://localhost:7012/project/112
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjU0NzQ2MzIsImV4cCI6MTYyNTQ3NTUzMn0._B2oAzsLSBGxg8RUjM0wiyiWslxy5x-njYwJjDiMCt0
+Content-Type: application/json
+
+{
+
+}
+
+
+###
+GET http://localhost:7012/project/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjU0NzM2NzksImV4cCI6MTYyNTQ3NDU3OX0.HVYylV4XVDybbiYLgf5dDgx3adiYfSmKMYMwiOd58C8

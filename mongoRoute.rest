@@ -1,0 +1,44 @@
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Kathleen"
+}
+
+###
+GET http://localhost:4000/projectmongo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ5MzYyNTksImV4cCI6MTYyNDkzNzE1OX0.MBdx_DcDqdZMBxZxMI2ZUrq0V5KAp-1HqVjkq3hihzU
+
+###
+
+GET http://localhost:4000/projectmongo/60da6698f55d994a5867bc1e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ5MzYyNTksImV4cCI6MTYyNDkzNzE1OX0.MBdx_DcDqdZMBxZxMI2ZUrq0V5KAp-1HqVjkq3hihzU
+
+###
+
+POST http://localhost:4000/projectmongo/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ5MzA2NzMsImV4cCI6MTYyNDkzMTU3M30.t_0u_ldecKWN0nPZZoU6atAxIK7yateae58No9tRwmU
+Content-Type: application/json
+
+{
+    "title": "new project",
+    "description": "test",
+    "budget": "$9000",
+    "email": "user1@email.com"
+}
+
+###
+DELETE http://localhost:4000/projectmongo/60d17d7d63cd31489c13f838
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ5MjU3ODYsImV4cCI6MTYyNDkyNjY4Nn0.YlIvSE090r_RLWqF_MEJXItYf-p3PQ_0pM7Flj3pucc
+
+###
+PATCH http://localhost:4000/projectmongo/60da6698f55d994a5867bc1e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ5MzU0NzMsImV4cCI6MTYyNDkzNjM3M30.UQuCRQE19s7jE1wCXCEMqEu-WZr7n12kceqpzWWh5DA
+Content-Type: application/json
+
+{
+    
+    "description": "new desc",
+    "budget": "$90000",
+    "email": "user1dsfs@email.com"
+}

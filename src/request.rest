@@ -1,0 +1,52 @@
+GET http://localhost:7021/project
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjU0NDIwMzYsImV4cCI6MTYyNTQ0MjkzNn0.tAvk3PPwLFZ8zflpsSOLWBahO_Gn76uIuAD-ut8BA78
+
+
+###
+POST http://localhost:7012/login
+Content-Type: application/json
+
+{
+    "username": "Kathleen"
+}
+
+
+###
+GET http://localhost:4001/project/dsgr
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ4NjQwODYsImV4cCI6MTYyNDg2NTI4Nn0.p7_7dkH1PPsFQCmn5k5oFD6WjW_kUhXHSicZcnjN3Fc
+
+
+###
+GET http://localhost:4001/project/10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ4NDkyNjcsImV4cCI6MTYyNDg1MDE2N30.BUJvxdupFtsCszJOUyV_ElFGcLvW5lnd88BMOjHSiMc
+
+
+###
+POST http://localhost:4001/project/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ5MjM3MzYsImV4cCI6MTYyNDkyNDkzNn0.Q1Obuj8MILuY2aw9DOWgSgFW6BpwdBs6v5ByDvEYsEg
+Content-Type: application/json
+
+{
+    "title": 213,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus ornare posuere. Pellentesque ut luctus nulla. Vivamus imperdiet a purus cursus dapibus. Curabitur ut magna arcu. Proin vel fringilla sem, vitae elementum ante. Proin vestibulum arcu in lectus dapibus porta. Sed gravida vulputate porta. Ut iaculis sapien non turpis eleifend sodales congue ut tortor.",
+    "budget": "$9000",
+    "email": "newuser6@email.com"
+}
+
+
+###
+DELETE http://localhost:4001/project/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ4NjU1OTcsImV4cCI6MTYyNDg2Njc5N30.CM2_s8iOLgQu9R0yW4wqkZtgDU2zL-PhEn4-UIu8laU
+
+
+###
+PATCH http://localhost:4001/project/69
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F0aGxlZW4iLCJpYXQiOjE2MjQ5MjI1ODIsImV4cCI6MTYyNDkyMzc4Mn0.rpBx7GsIEGnORN1oLtzF61tAgzI26rYqA2oZ_SGnocE
+Content-Type: application/json
+
+{
+    "title": "New Project Monday 06282021",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus ornare posuere. Pellentesque ut luctus nulla. Vivamus imperdiet a purus cursus dapibus. Curabitur ut magna arcu. Proin vel fringilla sem, vitae elementum ante. Proin vestibulum arcu in lectus dapibus porta. Sed gravida vulputate porta. Ut iaculis sapien non turpis eleifend sodales congue ut tortor.",
+    "budget": "$9000",
+    "email": "newuser6@email.com"
+}
